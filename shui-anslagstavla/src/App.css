@@ -12,7 +12,7 @@
   --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
   --border-radius: 12px;
-  --box-shadow: 0 4px 15px rgba(162, 210, 255, 0.2); /* Mjuk blå skugga */
+  --box-shadow: 0 4px 15px rgba(162, 210, 255, 0.2); 
 }
 
 * {
@@ -79,7 +79,7 @@ header button:hover {
 }
 
 .primary-btn {
-  background-color: var(--primary-color);
+  background-color: #0047AB;
   color: #ffffff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -92,7 +92,7 @@ header button:hover {
 }
 
 .primary-btn:hover:not(:disabled) {
-  background-color: var(--primary-hover);
+  background-color: #003682;
   transform: translateY(-1px);
 }
 
@@ -208,7 +208,7 @@ textarea:focus {
 }
 
 .post-title {
-  color: var(--primary-color);
+  color: #0047AB;
   margin-bottom: 0.75rem;
   font-size: 1.4rem;
 }

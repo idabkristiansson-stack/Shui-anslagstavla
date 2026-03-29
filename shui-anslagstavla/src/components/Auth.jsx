@@ -27,7 +27,7 @@ export default function Auth({ setToken }) {
 
       if (!response.ok) {
         if (response.status === 400) {
-          throw new Error('Användarnamnet och lösenordet måste stämma överens med kraven.');
+          throw new Error('Fel användarnamnet och/eller lösenordet eller att kontot ej finns.');
         } else if (response.status === 401) {
           throw new Error('Fel användarnamn eller lösenord.');
         } else if (response.status === 409) {
@@ -51,7 +51,7 @@ export default function Auth({ setToken }) {
           throw new Error('Inloggningen lyckades, men vi fick ingen token tillbaka.');
         }
       } else {
-        alert('Ditt konto är skapat! Logga in nu.');
+        alert('Ditt konto är skapat! Du kan nu logga in.');
         setIsLoginMode(true);
         setPassword('');
       }
