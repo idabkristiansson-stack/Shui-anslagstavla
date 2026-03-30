@@ -27,7 +27,7 @@ export default function Auth({ setToken }) {
 
       if (!response.ok) {
         if (response.status === 400) {
-          throw new Error('Fel användarnamnet och/eller lösenordet eller att kontot ej finns.');
+          throw new Error('Du har angett fel användarnamn och/eller lösenord eller att kontot ej existerar.');
         } else if (response.status === 401) {
           throw new Error('Fel användarnamn eller lösenord.');
         } else if (response.status === 409) {
